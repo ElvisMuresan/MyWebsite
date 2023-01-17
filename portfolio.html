@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="toata-pagina">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -22,9 +22,24 @@
     </header>
 
     <main>
+        <div class="container">
 
-        <article>
+            <h1>Galery</h1>
 
+            <div class="container-imagini">
+                <div class="image"><img src="img/Elvis.jpg" alt="Me"> </div>
+                <div class="image"><img src="img/Elvis.jpg" alt="Me"> </div>
+                <div class="image"><img src="img/Elvis.jpg" alt="Me"> </div>
+                <div class="image"><img src="img/Elvis.jpg" alt="Me"> </div>
+                <div class="image"><img src="img/Elvis.jpg" alt="Me"> </div>
+                <div class="image"><img src="img/Elvis.jpg" alt="Me"> </div>
+            </div>
+
+            <div class="popup-imag">
+                <span>&times;</span>
+                <img src="img/Elvis.jpg" alt="">
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -35,12 +50,21 @@
             </span>
         </div>
 
-        <div class="linkedin">
-
-        </div>
-
-
+        <div class="linkedin"></div>
     </footer>
+
+    <script>
+        document.querySelectorAll('.container-imagini img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-imag').style.display = 'block';
+                document.querySelector('.popup-imag img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-imag span').onclick = () => {
+            document.querySelector('.popup-imag').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
