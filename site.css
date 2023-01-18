@@ -7,7 +7,8 @@
     background-color: rgb(247, 245, 245);
     background-image: url("img/cool-background.png");
     color: white;
-    height: 80%;
+    height: 100%;
+    width: 100%;
     align-items: center;
     font-family: 'Saira Condensed', sans-serif;
     transition: 0.5s all;
@@ -21,6 +22,7 @@ body {}
 p {
     margin: 0.7em 0.7em 0.5em 0.7em;
 }
+
 
 .header {
     all: unset;
