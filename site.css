@@ -1,20 +1,18 @@
 /* General style*/
 * {
-    margin: 0;
+    /* margin: 0; */
 }
 
 .toata-pagina {
-    background-color: rgb(247, 245, 245);
-    background-image: url("img/cool-background.png");
+    /* background-color: rgb(247, 245, 245);
+    /* background-image: url("img/cool-background.png"); */
+    background-image: url("img/dark.jpg");
     color: white;
     height: 100%;
     width: 100%;
     align-items: center;
     font-family: 'Saira Condensed', sans-serif;
     transition: 0.5s all;
-
-
-
 }
 
 body {}
@@ -39,6 +37,13 @@ p {
     letter-spacing: 3px;
 }
 
+@media only screen and (min-width: 768px) {
+    .header {
+        text-align: center;
+        align-items: center;
+    }
+}
+
 nav a:visited,
 nav a:link {
     color: rgb(16, 190, 190);
@@ -61,9 +66,10 @@ nav>ul>li {
 }
 
 main {
-    display: block;
-
-    padding-top: 3em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 5em;
     padding-bottom: 3em;
     min-height: 70%;
 }
@@ -72,9 +78,16 @@ footer {
     padding: 15px;
 }
 
+@media only screen and (min-width: 768px) {
+    .main-home {
+        text-align: center;
+    }
+}
+
 .main-home {
     all: unset;
     display: flex;
+    align-items: center;
     font-family: 'Saira Condensed', sans-serif;
     padding: 2em;
     text-align: center;
@@ -82,15 +95,21 @@ footer {
     display: flexbox;
     font-size: 1.2rem;
     letter-spacing: 2px;
-    align-items: center;
-    margin-left: 450px;
-
+    /* margin-left: 650px; */
 }
 
+.toata-pagina * {
+    box-sizing: border-box;
+}
+
+
 @media only screen and (min-width: 768px) {
-    main {
+    .h1-home {
         display: flex;
+        text-align: center;
+        align-items: center;
         margin-left: 7%;
+
     }
 }
 
@@ -110,7 +129,6 @@ footer {
 
 .contact-button {
     all: unset;
-
     background-color: rgb(16, 190, 190);
     cursor: pointer;
     margin-top: 20px;
@@ -121,17 +139,113 @@ footer {
     margin-bottom: auto;
 }
 
+.contact-button>a {
+    all: unset;
+
+}
+
 /* Contact */
+
+.socials-contactMe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    gap: 30px;
+    max-width: 750px;
+    min-height: 582px;
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .socials-contactMe {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+        padding: 0 0 100px;
+    }
+}
+
+
+.pagina-contact {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .pagina-contact {
+        display: block;
+    }
+}
+
+
+.contact2>span {
+    color: rgb(16, 190, 190);
+}
+
+@media screen and (max-width: 768px) {
+    .contact2 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+.socials-contactMe2 {
+    display: flex;
+    gap: 50px;
+}
+
+.toata-pagina * {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+/*Socials */
+
 .contact-socials {
     all: unset;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 300px;
-    text-align: center;
     gap: 10px;
     -webkit-box-pack: justify;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-socials>h2 {
+        margin-bottom: 0px;
+    }
+}
+
+.contact-socials>h2 {
+    all: unset;
+    display: block;
+    font-size: 28px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: Opx;
 }
 
 .contact-email,
@@ -152,6 +266,112 @@ footer {
     gap: 10px;
     padding: 10px 20px;
     transition: background-color 500ms ease 0s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .linie-verticala {
+        margin-bottom: 0px;
+    }
+}
+
+.linie-verticala {
+    height: auto;
+    width: 1px;
+    background-color: currentColor;
+}
+
+/* Contact me */
+
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        gap: 5px;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form>h2 {
+        margin-bottom: 0px;
+    }
+}
+
+
+.contact-form>h2 {
+    font-size: 28px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: revert;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.contact-form .css-label {
+    margin-bottom: 15px;
+}
+
+label {
+    cursor: default;
+    display: table;
+    width: 100%;
+    margin: 5px;
+    position: relative;
+    border-collapse: separate;
+}
+
+.css-label {
+    all: unset;
+    min-width: 200px;
+    margin-bottom: 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    padding: 10px 20px;
+}
+
+
+
+input[type="text"] {
+    padding: 4px 4px;
+}
+
+input[type="email"] {
+    padding: 4px 4px;
+}
+
+textarea {
+    padding: 1px 2px;
+}
+
+.button-contact {
+    all: unset;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 10px;
+    margin-right: 100px;
+    padding: 5px 35px;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(16, 190, 190);
+
+
 }
 
 /* About */
@@ -337,4 +557,68 @@ td {
 
 tr:nth-child(even) {
     background-color: rgb(16, 190, 190);
+}
+
+/*Footer */
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        background-color: var;
+    }
+}
+
+.footer {
+    all: unset;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: left;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    -webkit-justify-content: center;
+    justify-content: left;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+    padding: 30px 50px;
+}
+
+.footer1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: right;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 750px;
+}
+
+.footer2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.socials-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
 }
