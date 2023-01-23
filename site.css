@@ -11,7 +11,7 @@
      transition: 0.5s all;
      -background-color: rgb(12, 7, 7);
      --contact-box-background: #acacac;
-     --footer-background: rgba(186, 79, 79, 0.1);
+     --footer-background: rgba(216, 12, 19, 0.1);
      --image-border: #121212;
      --modal-background: rgb(162, 23, 23);
      --modal-color: #000;
@@ -25,7 +25,7 @@
  .body-allpages {
      position: relative;
      font-family: 'Saira Condensed', sans-serif;
-     font-size: 1.2rem;
+     font-size: 1rem;
      display: -webkit-box;
      display: -webkit-flex;
      display: -ms-flexbox;
@@ -41,7 +41,7 @@
      min-height: 100vh;
      padding: 0;
      margin: 0;
-     letter-spacing: 2px;
+     letter-spacing: 1px;
      background-color: var(--background-color);
      -webkit-transition: background-color 500ms;
      -ms-transition: background-color 500ms;
@@ -125,7 +125,7 @@
 
  nav a:visited,
  nav a:link {
-     color: rgb(16, 190, 190);
+     color: aqua;
      text-decoration: none;
      font-size: 1.5rem;
      font-weight: 700;
@@ -174,6 +174,7 @@
      max-width: 750px;
      min-height: 582px;
      padding: 100px 0;
+     font-size: 1.5rem;
  }
 
 
@@ -203,14 +204,14 @@
  }
 
  .h1-home>span {
-     color: rgb(16, 190, 190);
+     color: aqua;
  }
 
 
 
  .contact-button {
      all: unset;
-     background-color: rgb(16, 190, 190);
+     background-color: aqua;
      cursor: pointer;
      margin-top: 20px;
      padding: 5px 35px 5px 35px;
@@ -273,7 +274,7 @@
 
 
  .contact2>span {
-     color: rgb(16, 190, 190);
+     color: aqua;
  }
 
  @media screen and (max-width: 768px) {
@@ -338,7 +339,7 @@
      display: flex;
      -webkit-box-align: center;
      align-items: center;
-     width: 250px;
+     width: 300px;
      background-color: #acacac;
      border-width: 1px;
      border-style: solid;
@@ -450,7 +451,7 @@
      text-align: center;
      margin-left: auto;
      margin-right: auto;
-     background-color: rgb(16, 190, 190);
+     background-color: aqua;
 
 
  }
@@ -484,7 +485,7 @@
  .poza-mea {
      all: unset;
      width: 100%;
-     max-width: 350px;
+     max-width: 300px;
      height: 3auto;
      border-radius: 5px;
  }
@@ -533,7 +534,7 @@
      margin-inline-start: 0px;
      margin-inline-end: 0px;
      font-weight: bold;
-     color: rgb(16, 190, 190);
+     color: aqua;
  }
 
  .sub-title {
@@ -551,7 +552,7 @@
 
  .learn-more {
      all: unset;
-     background-color: rgb(16, 190, 190);
+     background-color: aqua;
      cursor: pointer;
      margin-top: 20px;
      padding: 5px 35px;
@@ -613,15 +614,15 @@
  .container-imagini {
      display: flex;
      flex-wrap: wrap;
-     gap: 35px;
+     gap: 30px;
      justify-content: center;
-     padding: 10px;
+     padding: 60px;
  }
 
  .container-imagini .image {
      height: 390px;
-     width: 320px;
-     border: 5px solid rgb(16, 190, 190);
+     width: 270px;
+     border: 5px solid aqua;
      box-shadow: 0 5px 15px rgba(0, 0, 0, 0, .1);
      overflow: hidden;
      cursor: pointer;
@@ -654,7 +655,7 @@
      right: 10px;
      font-size: 60px;
      font-weight: bolder;
-     color: rgb(16, 190, 190);
+     color: aqua;
      cursor: pointer;
      z-index: 100;
  }
@@ -699,7 +700,7 @@
      border-collapse: collapse;
      border-spacing: 0;
      width: 100%;
-     border: 1px solid rgb(16, 190, 190);
+     border: 1px solid aqua;
  }
 
  th,
@@ -709,7 +710,7 @@
  }
 
  tr:nth-child(even) {
-     background-color: rgb(16, 190, 190);
+     background-color: aqua;
  }
 
  /*Footer */
@@ -740,7 +741,9 @@
      flex-wrap: wrap;
      text-align: left;
      width: 100%;
-     padding: 30px 50px;
+     padding: 10px 100px;
+     font-size: 2rem;
+     color: aqua;
  }
 
  .footer1 {
@@ -748,14 +751,14 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     -webkit-align-items: center;
+     -webkit-align-items: left;
      -webkit-box-align: center;
      -ms-flex-align: center;
      align-items: right;
      -webkit-box-pack: justify;
      -webkit-justify-content: space-between;
      justify-content: space-between;
-     width: 750px;
+     width: 1050px;
  }
 
  .footer2 {
@@ -774,4 +777,9 @@
      display: -ms-flexbox;
      display: flex;
      gap: 50px;
+     item-color: aqua;
+ }
+
+ svg {
+     color: aqua;
  }
