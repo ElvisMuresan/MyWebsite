@@ -1,7 +1,4 @@
  /*General style */
- * {
-     /* margin: 0; */
- }
 
  .toata-pagina {
      /* background-image: url("img/cool-background.png"); */
@@ -9,33 +6,15 @@
      font-family: 'Saira Condensed', sans-serif;
      color: white;
      transition: 0.5s all;
-     -background-color: rgb(12, 7, 7);
-     --contact-box-background: #acacac;
-     --footer-background: rgba(216, 12, 19, 0.1);
-     --image-border: #121212;
-     --modal-background: rgb(162, 23, 23);
-     --modal-color: #000;
-     --drawer-active-link: #fff;
-     --drawer-default-link: #000;
-     --backdrop-background: rgba(178, 29, 29, 0.6);
-     -webkit-transition: 0.5s all;
-     transition: 0.5s all;
  }
 
  .body-allpages {
      position: relative;
      font-family: 'Saira Condensed', sans-serif;
      font-size: 1rem;
-     display: -webkit-box;
-     display: -webkit-flex;
-     display: -ms-flexbox;
      display: flex;
-     -webkit-flex-direction: column;
-     -ms-flex-direction: column;
      flex-direction: column;
      -webkit-box-pack: center;
-     -ms-flex-pack: center;
-     -webkit-justify-content: center;
      justify-content: center;
      width: 100vw;
      min-height: 100vh;
@@ -43,20 +22,7 @@
      margin: 0;
      letter-spacing: 1px;
      background-color: var(--background-color);
-     -webkit-transition: background-color 500ms;
-     -ms-transition: background-color 500ms;
-     -webkit-transition: background-color 500ms;
      transition: background-color 500ms;
-     -webkit-tap-highlight-color: transparent;
-     -webkit-overflow-scrolling: none;
-     -webkit-touch-callout: none;
-     -webkit-user-select: none;
-     -khtml-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
-     -webkit-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
      user-select: none;
  }
 
@@ -64,22 +30,11 @@
      box-sizing: border-box;
  }
 
- body {
-     display: block;
-     margin: 8px;
- }
 
  .body-allpages1 {
      display: block;
  }
 
- .toata-pagina * {
-     box-sizing: border-box;
- }
-
- div {
-     display: block;
- }
 
  .body-allpages2 {
      width: 100vw;
@@ -296,14 +251,6 @@
      gap: 50px;
  }
 
- .toata-pagina * {
-     box-sizing: border-box;
- }
-
- div {
-     display: block;
- }
-
  /*Socials */
 
  .contact-socials {
@@ -466,10 +413,6 @@
      align-items: center;
      gap: 20px;
      font-size: 18px;
- }
-
- .toata-pagina * {
-     box-sizing: border-box;
  }
 
 
