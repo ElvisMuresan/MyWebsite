@@ -1,4 +1,5 @@
  /*General style */
+<<<<<<< HEAD
  html {
      -webkit-text-size-adjust: 100%;
      -ms-text-size-adjust: 100%;
@@ -10,6 +11,9 @@
      box-sizing: border-box;
  }
 
+=======
+
+>>>>>>> master
  .toata-pagina {
      /* background-image: url("img/cool-background.png"); */
      background-image: url("img/dark.jpg");
@@ -23,29 +27,46 @@
      font-family: 'Saira Condensed', sans-serif;
      font-size: 1rem;
      display: flex;
+<<<<<<< HEAD
      flex-direction: column;
      -webkit-box-pack: center;
      justify-content: center;
      width: 100vw;
      min-height: 100vh;
      padding: 0;
+=======
+>>>>>>> master
      margin: 0;
      letter-spacing: 1px;
      background-color: var(--background-color);
      transition: background-color 500ms;
+<<<<<<< HEAD
      user-select: none;
+=======
+     -webkit-tap-highlight-color: transparent;
+>>>>>>> master
  }
 
  .toata-pagina * {
      box-sizing: border-box;
  }
 
+<<<<<<< HEAD
+=======
+ body {
+     display: block;
+     margin: 8px;
+ }
+>>>>>>> master
 
  .body-allpages1 {
      display: block;
  }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
  .body-allpages2 {
      width: 100vw;
      min-height: 100vh;
@@ -58,6 +79,7 @@
 
 
  /* Header page */
+<<<<<<< HEAD
 
 
 
@@ -195,6 +217,116 @@
  }
 
 
+=======
+
+ .header {
+     all: unset;
+     display: block;
+     align-items: center;
+     top: 0;
+     left: 0;
+     width: 100%;
+     font-family: 'Saira Condensed', sans-serif;
+     padding: 3em;
+     text-align: center;
+     width: 100%;
+     font-size: 2rem;
+     letter-spacing: 3px;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .header {
+         text-align: center;
+         align-items: center;
+     }
+ }
+
+ nav a:visited,
+ nav a:link {
+     color: aqua;
+     text-decoration: none;
+     font-size: 1.5rem;
+     font-weight: 700;
+ }
+
+ nav>ul {
+     display: inline;
+     padding: 0;
+ }
+
+ nav>ul>li {
+     display: inline-block;
+     list-style: none;
+     margin: 0 40px 0 40px;
+     opacity: 1;
+
+ }
+
+
+ @media only screen and (min-width: 768px) {
+     .main-home {
+         text-align: center;
+     }
+ }
+
+ /* Home page */
+
+ .main-home {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-align-items: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     margin: auto;
+     gap: 30px;
+     max-width: 750px;
+     min-height: 582px;
+     padding: 100px 0;
+     font-size: 1.5rem;
+ }
+
+
+
+ @media only screen and (min-width: 768px) {
+     .h1-home {
+         display: flex;
+         text-align: center;
+         align-items: center;
+         margin-left: 7%;
+
+     }
+ }
+
+ .h1-home {
+
+     display: flex;
+     gap: 10px;
+     text-transform: uppercase;
+     font-size: 4rem;
+     font-weight: 700;
+     margin-top: 0px;
+     margin-right: auto;
+     margin-bottom: 0px;
+     margin-left: auto;
+
+ }
+
+ .h1-home>span {
+     color: aqua;
+ }
+
+
+>>>>>>> master
 
  .contact-button {
      all: unset;
@@ -474,8 +606,13 @@
  }
 
  /* @media screen and (min-width: 769px) .about-text {
+<<<<<<< HEAD
      text-align: start;
  } */
+=======
+    text-align: start;
+} */
+>>>>>>> master
 
 
  about.text {
@@ -652,6 +789,7 @@
      }
  }
 
+<<<<<<< HEAD
  /* Tehnologii */
  .row {
      margin-left: -5px;
@@ -688,10 +826,13 @@
      background-color: aqua;
  }
 
+=======
+>>>>>>> master
  /*Footer */
 
  @media only screen and (min-width: 768px) {
      .footer {
+<<<<<<< HEAD
          align-items: center;
          text-align: center;
      }
@@ -701,6 +842,9 @@
      .footer {
          align-items: center;
          text-align: center;
+=======
+         background-color: var;
+>>>>>>> master
      }
  }
 
@@ -744,6 +888,7 @@
      width: 1050px;
  }
 
+<<<<<<< HEAD
  @media only screen and (min-width: 768px) {
      .footer1 {
          text-align: center;
@@ -751,6 +896,8 @@
      }
  }
 
+=======
+>>>>>>> master
  .footer2 {
      display: -webkit-box;
      display: -webkit-flex;
@@ -761,6 +908,7 @@
      flex-direction: column;
  }
 
+<<<<<<< HEAD
  @media only screen and (min-width: 768px) {
      .footer2 {
          text-align: center;
@@ -768,6 +916,8 @@
      }
  }
 
+=======
+>>>>>>> master
  .socials-footer {
      display: -webkit-box;
      display: -webkit-flex;
@@ -777,6 +927,7 @@
      item-color: aqua;
  }
 
+<<<<<<< HEAD
  @media only screen and (min-width: 768px) {
      .socials-footer {
          text-align: center;
@@ -784,6 +935,8 @@
      }
  }
 
+=======
+>>>>>>> master
  svg {
      color: aqua;
  }
