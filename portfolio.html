@@ -13,11 +13,12 @@
     <div class="body-allpages1">
         <div class="body-allpages2">
             <header class="header">
-                <nav>
-                    <ul>
+                <nav class="navBar">
+                    <button id="navBtn">&#9776</button>
+                    <ul id="primaryNav">
                         <li><a href="home.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li class="active"><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="technology.html">Technology</a></li>
                     </ul>
@@ -105,19 +106,7 @@
             </footer>
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll('.container-imagini img').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-imag').style.display = 'block';
-                document.querySelector('.popup-imag img').src = image.getAttribute('src');
-            }
-        });
-
-        document.querySelector('.popup-imag span').onclick = () => {
-            document.querySelector('.popup-imag').style.display = 'none';
-        }
-    </script>
+    <script src="javascript.js"></script>
 </body>
 
 </html>

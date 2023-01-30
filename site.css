@@ -89,6 +89,12 @@
          width: 100vw;
          border: none;
      }
+
+     nav ul {
+         display: none;
+     }
+
+
  }
 
  @media only screen and (min-width: 768px) {
@@ -106,9 +112,13 @@
      }
 
      nav li {
+         width: auto;
+     }
+
+     /* nav li {
          width: 20%;
          float: left;
-     }
+     } */
  }
 
 
@@ -121,7 +131,7 @@
  }
 
  nav>ul {
-     display: inline;
+     /* display: inline; */
      padding: 0;
      margin: 0;
  }
@@ -156,9 +166,9 @@
      display: block;
  }
 
- nav ul {
+ /* nav ul {
      display: none;
- }
+ } */
 
 
  @media only screen and (min-width: 768px) {
