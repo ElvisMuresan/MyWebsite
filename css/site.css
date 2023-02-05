@@ -21,6 +21,11 @@ body::before {
     transition: background-color 500ms ease 0s;
 }
 
+.socials-footer {
+    display: flex;
+    gap: 20px;
+}
+
 @media (min-width: 768px) {
     .news-input {
         width: 1000px;
