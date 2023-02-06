@@ -26,6 +26,18 @@ body::before {
     gap: 20px;
 }
 
+.btn {
+    background-color: rgb(5, 129, 129);
+}
+
+svg {
+    color: rgb(5, 129, 129);
+}
+
+.cerculet {
+    color: rgb(5, 129, 129);
+}
+
 @media (min-width: 768px) {
     .news-input {
         width: 1000px;
