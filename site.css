@@ -13,6 +13,7 @@
  .toata-pagina {
      /* background-image: url("img/cool-background.png"); */
      /* background-image: url("img/pozaecran.jpg"); */
+     background-clip: url("img/alb.mp4");
      font-family: 'Saira Condensed', sans-serif;
      color: black;
      transition: 0.5s all;
@@ -541,6 +542,16 @@
 
  /* About */
 
+ @media screen and (max-width: 768px) {
+     .main-home {
+         -webkit-box-pack: start;
+         -ms-flex-pack: start;
+         -webkit-justify-content: flex-start;
+         justify-content: flex-start;
+         padding: 0 0 100px;
+     }
+ }
+
  .pagina-about {
      display: none;
  }
@@ -548,6 +559,14 @@
  @media screen and (max-width: 768px) {
      .pagina-about {
          display: block;
+     }
+ }
+
+ @media only screen and (max-width: 768px) {
+     .about-continut {
+         gap: 30px;
+         flex-direction: column;
+         padding: 0px 30px;
      }
  }
 
@@ -583,6 +602,7 @@
  .about-main {
      all: unset;
      display: flex;
+     flex-direction: column;
      -webkit-box-align: center;
      align-items: center;
      width: 100%;
