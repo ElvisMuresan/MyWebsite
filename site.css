@@ -159,11 +159,13 @@
  }
 
  nav li.active a {
-     color: aqua;
+     color: rgb(58, 214, 214);
+     ;
  }
 
  nav li a:hover {
-     color: aqua;
+     color: rgb(58, 214, 214);
+     ;
  }
 
  nav ul.open {
@@ -230,7 +232,8 @@
 
 
  .home-phone>span {
-     color: aqua;
+     color: rgb(58, 214, 214);
+     ;
  }
 
  @media screen and (max-width: 768px) {
@@ -290,7 +293,8 @@
 
  .contact-button {
      all: unset;
-     background-color: aqua;
+     background-color: rgb(58, 214, 214);
+     ;
      cursor: pointer;
      margin-top: 20px;
      padding: 5px 35px 5px 35px;
@@ -356,7 +360,8 @@
 
 
  .contact2>span {
-     color: aqua;
+     color: rgb(58, 214, 214);
+     ;
  }
 
  @media only screen and (max-width: 768px) {
@@ -388,7 +393,7 @@
 
  /*Socials */
 
- .contact-socials {
+ .contact-form {
      /* all: unset; */
      display: flex;
      flex-direction: column;
@@ -398,21 +403,12 @@
  }
 
  @media only screen and (max-width: 768px) {
-     .contact-socials>h2 {
+     .contact-form>h2 {
          margin-bottom: 0px;
      }
  }
 
- .contact-socials>h2 {
-     /* all: unset; */
-     display: block;
-     font-size: 28px;
-     margin-top: 0px;
-     margin-right: 0px;
-     margin-left: Opx;
- }
-
- .contact-socials>div {
+ .contact-form>div {
      opacity: 3;
  }
 
@@ -456,11 +452,6 @@
      }
  }
 
- .contact-form {
-     display: flex;
-     flex-direction: column;
-     font-size: 18px;
- }
 
  @media only screen and (max-width: 768px) {
      .contact-form>h2 {
@@ -470,6 +461,7 @@
 
 
  .contact-form>h2 {
+     display: block;
      font-size: 28px;
      margin-top: 0px;
      margin-right: 0px;
@@ -535,7 +527,8 @@
      text-align: center;
      margin-left: auto;
      margin-right: auto;
-     background-color: aqua;
+     background-color: rgb(58, 214, 214);
+
 
 
  }
@@ -572,7 +565,8 @@
 
 
  .about-phone>span {
-     color: aqua;
+     color: rgb(58, 214, 214);
+
  }
 
  @media screen and (max-width: 768px) {
@@ -591,7 +585,7 @@
 
  .about-continut {
      display: flex;
-     flex-direction: column;
+     /* flex-direction: column; */
      -webkit-box-align: center;
      align-items: center;
      gap: 20px;
@@ -679,7 +673,7 @@
 
  .learn-more {
      all: unset;
-     background-color: aqua;
+     background-color: rgb(58, 214, 214);
      cursor: pointer;
      margin-top: 20px;
      padding: 5px 35px;
@@ -735,7 +729,7 @@
 
 
  .portfolio-phone>span {
-     color: aqua;
+     color: rgb(58, 214, 214);
  }
 
  @media screen and (max-width: 768px) {
@@ -756,6 +750,11 @@
      display: flex;
  }
 
+ .card-footer a {
+     background-color: rgb(58, 214, 214);
+     color: black;
+ }
+
 
  /* .image-wrapper {
      height: 40vw;
@@ -770,9 +769,17 @@
  } */
 
  /* Tehnologii */
+
+ .aliniere {
+     display: flex;
+     align-items: center;
+ }
+
+
  .row {
-     margin-left: -5px;
-     margin-right: -5px;
+     display: flex;
+     /* margin-left: -5px;
+     margin-right: -5px; */
      align-items: center;
  }
 
@@ -793,7 +800,7 @@
      border-collapse: collapse;
      border-spacing: 0;
      width: 100%;
-     border: 1px solid aqua;
+     border: 1px solid rgb(58, 214, 214);
  }
 
  th,
@@ -803,7 +810,7 @@
  }
 
  tr:nth-child(even) {
-     background-color: aqua;
+     background-color: rgb(58, 214, 214);
  }
 
 
@@ -840,7 +847,7 @@
 
  @media only screen and (max-width: 768px) {
      .footer {
-         background-color: #acacac;
+         /* background-color: #acacac; */
          padding: 40px 30px;
          text-align: center;
          align-items: center;
@@ -888,13 +895,14 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     -webkit-flex-direction: column;
-     -ms-flex-direction: column;
-     flex-direction: column;
+     font-weight: bolder;
+     /* -webkit-flex-direction: column; */
+     /* -ms-flex-direction: column; */
+     /* flex-direction: line; */
  }
 
  .footer2 span {
-     width: 2em;
+     width: 5em;
  }
 
  .footer2>span:nth-of-type(2) {
@@ -952,9 +960,23 @@
 
  .back-video {
      position: absolute;
+     top: 0;
+     left: 0;
      right: 0;
      bottom: 0;
+     width: 100%;
+     height: 100%;
      z-index: -1;
+ }
+
+ .back-video video {
+     min-width: 100%;
+     min-height: 100%;
+     object-fit: cover;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, 50%);
  }
 
  @media (min-aspect-ratio: 16/9) {
