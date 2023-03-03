@@ -1,7 +1,7 @@
 //NavBar
 
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
+  document.getElementById("primaryNav").classList.toggle("open");
 }
-let x = document.getElementById('navBtn');
-x.onclick = toggleMenu;
+let navbarButton = document.getElementById('navBtn');
+// navbarButton.onclick = toggleMenu;
