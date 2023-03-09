@@ -1,4 +1,15 @@
  /*General style */
+
+ :root {
+   --dark: #2a2828;
+   --darker: #100303;
+   --light: #ede8e8;
+   --blue: #7CB9E8;
+   --blueer: #00308F;
+   --yellow: #c1d220;
+   --albastru: rgb(3, 149, 149);
+ }
+
  html {
    -webkit-text-size-adjust: 100%;
    -ms-text-size-adjust: 100%;
@@ -12,10 +23,9 @@
 
  .toata-pagina {
    /* background-image: url("img/cool-background.png"); */
-   /* background-image: url("img/pozaecran.jpg"); */
-   background-clip: url("img/alb.mp4");
+   background-image: url("img/last.png");
    font-family: 'Saira Condensed', sans-serif;
-   color: black;
+   color: var(--light);
    transition: 0.5s all;
  }
 
@@ -128,7 +138,7 @@
 
  nav a:visited,
  nav a:link {
-   color: black;
+   color: var(--light);
    text-decoration: none;
    font-size: 1.5rem;
    font-weight: 700;
@@ -152,7 +162,7 @@
  button#navBtn {
    background: none;
    border: none;
-   color: black;
+   color: var(--light);
    font-size: 2.4rem;
    cursor: pointer;
    padding: 0 30px 0 2vw;
@@ -286,7 +296,7 @@
  }
 
  .h1-home>span {
-   color: black;
+   color: var(--light);
  }
 
 
@@ -306,6 +316,7 @@
 
  .contact-button>a {
    all: unset;
+   color: var(--darker);
 
  }
 
@@ -427,6 +438,11 @@
    gap: 10px;
    padding: 10px 20px;
    transition: background-color 500ms ease 0s;
+   color: var(--darker);
+ }
+
+ .contact-email>svg {
+   color: var(--darker);
  }
 
 
@@ -494,12 +510,18 @@
 
  .css-label {
    all: unset;
+   background-color: #acacac;
    min-width: 250px;
    margin-bottom: 10px;
    border-width: 2px;
    border-style: solid;
-   border-color: rgb(6, 2, 2);
+   border-color: var(--light);
+   opacity: 0.8;
    padding: 10px 20px;
+ }
+
+ .css-label::placeholder {
+   color: var(--darker);
  }
 
 
@@ -528,6 +550,7 @@
    margin-left: auto;
    margin-right: auto;
    background-color: rgb(58, 214, 214);
+   color: var(--darker);
 
 
 
@@ -655,7 +678,7 @@
    margin-inline-start: 0px;
    margin-inline-end: 0px;
    font-weight: bold;
-   color: black;
+   color: var(--light);
  }
 
  .sub-title {
@@ -669,6 +692,7 @@
    background-color: currentColor;
    margin: 30px 0;
    padding: 1px;
+   color: var(--light);
  }
 
  .learn-more {
@@ -681,6 +705,7 @@
    text-align: center;
    margin-left: auto;
    margin-right: auto;
+   color: var(--darker);
  }
 
  .learn-more>button {
@@ -752,7 +777,7 @@
 
  .card-footer a {
    background-color: rgb(58, 214, 214);
-   color: black;
+   color: var(--darker);
  }
 
 
@@ -910,7 +935,7 @@
    display: -webkit-flex;
    display: -ms-flexbox;
    display: flex;
-   color: black;
+   color: var(--light);
    -webkit-align-items: center;
    -webkit-box-align: center;
    -ms-flex-align: center;
@@ -936,7 +961,7 @@
    display: -ms-flexbox;
    display: flex;
    gap: 20px;
-   color: black;
+   color: var(--light);
  }
 
  .socials-footer svg {
@@ -955,7 +980,7 @@
  }
 
  svg {
-   color: black;
+   color: var(--light);
  }
 
  .back-video {
