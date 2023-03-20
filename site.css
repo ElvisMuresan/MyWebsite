@@ -928,6 +928,7 @@
 
  .footer2 span {
    width: 5em;
+   color: white;
  }
 
  .footer2>span:nth-of-type(2) {
